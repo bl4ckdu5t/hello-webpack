@@ -4,4 +4,4 @@
 //document.write(require("./content.js"));
 import Button from './Components/Button';
 const button = new Button('google.com');
-button.render('a');
+button.render('<a>Stuff</a>');

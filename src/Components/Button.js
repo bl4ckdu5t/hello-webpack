@@ -16,10 +16,8 @@ export default class Button{
   render(node){
     const text = $(node).text();
 
-
-    $(node).html(
-      Mustache.render(template, {text})
-    );
+    console.log(text);
+    $('body').html( Mustache.render(template, {text}) );
 
     $('.button').click(this.onClick.bind(this));
   }
